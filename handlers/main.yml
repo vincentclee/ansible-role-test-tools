@@ -1,0 +1,8 @@
+---
+- name: Install package groups optional packages
+  shell: yum groups mark remove {{ item }} && yum install -y {{ item }} --setopt=group_package_types=mandatory,default,optional
+  with_items: "{{ package_groups }}"
+  args:
+    warn: False
+  tags:
+    - skip_ansible_lint

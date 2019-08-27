@@ -1,0 +1,7 @@
+---
+- name: Install package groups
+  package:
+    name: "{{ package_groups }}"
+    state: present
+  notify:
+    - Install package groups optional packages
