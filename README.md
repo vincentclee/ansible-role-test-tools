@@ -1,4 +1,4 @@
-# Ansible Role: test-tools
+# Ansible Role: test_tools
 
 [![Build Status](https://travis-ci.org/vincentclee/ansible-role-test-tools.svg?branch=master)](https://travis-ci.org/vincentclee/ansible-role-test-tools)
 
@@ -20,7 +20,7 @@ None.
 
     - hosts: test
       roles:
-        - vincentclee.test-tools
+        - vincentclee.test_tools
 
 ## License
 

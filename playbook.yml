@@ -1,4 +1,4 @@
 ---
 - hosts: localhost
   roles:
-    - vincentclee.test-tools
+    - vincentclee.test_tools

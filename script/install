@@ -3,5 +3,5 @@
 yum install -y epel-release
 yum install -y python-pip
 pip install --upgrade ansible
-ansible-galaxy install vincentclee.test-tools --force
-ansible-playbook ~/.ansible/roles/vincentclee.test-tools/playbook.yml
+ansible-galaxy install vincentclee.test_tools --force
+ansible-playbook ~/.ansible/roles/vincentclee.test_tools/playbook.yml

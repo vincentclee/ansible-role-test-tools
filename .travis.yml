@@ -11,7 +11,7 @@ matrix:
 
 env:
   global:
-    - ROLE_NAME: test-tools
+    - ROLE_NAME: test_tools
   matrix:
     - MOLECULE_DISTRO: centos:7
 
@@ -22,7 +22,7 @@ install:
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
   - cd ../
-  - mv ansible-role-$ROLE_NAME vincentclee.$ROLE_NAME
+  - mv ansible-role-${ROLE_NAME/_/-} vincentclee.$ROLE_NAME
   - cd vincentclee.$ROLE_NAME
 
 script:

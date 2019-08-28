@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: test_tools
   author: Vincent Lee
   description: Ansible Galaxy role for installing various test tools
   company: SSLTunnel
