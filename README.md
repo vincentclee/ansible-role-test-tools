@@ -22,6 +22,16 @@ None.
       roles:
         - vincentclee.test_tools
 
+## Install
+
+Run this:
+
+    bash -c "$(curl https://raw.githubusercontent.com/vincentclee/ansible-role-test-tools/master/script/install)"
+
+or
+
+    bash -c "$(wget -O - https://raw.githubusercontent.com/vincentclee/ansible-role-test-tools/master/script/install)"
+
 ## License
 
 GNU GPLv3

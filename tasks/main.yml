@@ -5,3 +5,46 @@
     state: present
   notify:
     - Install package groups optional packages
+
+- meta: flush_handlers
+
+- name: Install repositories
+  package:
+    name: epel-release
+    state: present
+
+- name: Install packages
+  package:
+    name:
+      - ethstatus
+      - figlet
+      - fio
+      - htop
+      - httping
+      - iftop
+      - iptraf
+      - jq
+      - nvme-cli
+      - parallel
+      - python-devel
+      - python-pip
+      - screen
+      - telnet
+    state: present
+
+- name: Install python packages
+  pip:
+    name:
+      - awscli
+      - ansible-lint
+      - glances[cpuinfo]
+    state: present
+
+- name: Populate service facts
+  service_facts:
+
+- name: Install docker python package
+  pip:
+    name: docker
+    state: present
+  when: "'docker.service' in services"
